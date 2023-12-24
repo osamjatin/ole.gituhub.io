@@ -106,11 +106,46 @@ body {
     color: #2F5A78;
     padding-left: 2px;
 }
+.btn {
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #004080;
+}
+
         </style>
 	</head>
 	<body>
     
         <a href="https://imgur.com/Vq7vN2W"><img class="myface" src="https://i.imgur.com/Vq7vN2W.png" title="source: imgur.com" /></a>
+
+
+        <!--Create a button-->
+
+        <a href="#" class="btn" onclick="showPopup()">Learn More</a>
+
+<div id="popup" class="popup">
+  <h2>More Information</h2>
+  <p>This is a popup with more information about the topic or product.</p>
+  <button onclick="hidePopup()">Close</button>
+</div>
+
+<script>
+
+function
+ 
+showPopup() {
+  document.getElementById('popup').style.display = 'block';
+}
+
+function
+ 
+hidePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
 
         <!--Intro-->
         <div class="side">
